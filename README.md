@@ -9,6 +9,6 @@ After this a permutation combination of the features are done in pandas datafram
 
 Acoording to studies normal models bear a prediction accuracy of 66.7%, HRFLM alone gives 88.7%, and the method mentioned above in our idea gives approximately 98.6%, which can be the highest amount of accuracy received in the cardiovascular disease domain.
 
-Note: HackInIndia folder consists of a dummy django web application. Normal models folder consists of the normal models(Random Forest, Decision Tree, KNN, Deep learning, and SVM's) codes and the proposed model contains the code for HRFLM algorithm. The dataset used for this project is uploaded in this repo by the name heart.csv- Sheet1.csv.
+Note: HackInIndia folder consists of a dummy django web application. Normal models folder consists of the normal models(Random Forest, Decision Tree, KNN, Deep learning, and SVM's) codes and the HRFLM model contains the code for HRFLM algorithm. The dataset used for this project is uploaded in this repo by the name heart.csv- Sheet1.csv.
 
 # Thank You...!! 
