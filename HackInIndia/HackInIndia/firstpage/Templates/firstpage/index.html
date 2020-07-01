@@ -1,0 +1,34 @@
+{% extends "firstpage/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+        <article class="media content-section">
+          <div class="media-body">
+            <div class="article-metadata">
+              <form action="submit" method="POST">
+                {% csrf_token %}
+ 
+                <fieldset class="form-group">
+                    <legend class="border-bottom mb-4">Join Today</legend>
+                    {{ form|crispy }}
+                    <div class="col-md-4 col-sm-4"><label for="fname">Age:</label> </div> <input name="cylinderVal" type="text" value={{temp.cylinders}}><br><br>
+                    <div class="col-md-4 col-sm-4"><label for="lname">Sex:</label> </div> <input type="text" id="lname" name="dispVal" value={{temp.displacement}}><br><br>
+                    <div class="col-md-4 col-sm-4"><label for="fname">thalach:</label> </div> <input type="text" id="fname" name="hrsPwrVal" value={{temp.horsepower}}><br><br>
+                    <div class="col-md-4 col-sm-4"><label for="lname">trestbps:</label> </div> <input type="text" id="lname" name="weightVal" value={{temp.weight}}><br><br>
+                    <div class="col-md-4 col-sm-4"><label for="fname">ca:</label></div>  <input type="text" id="fname" name="accVal" value={{temp.acceleration}}><br><br>
+                    <div class="col-md-4 col-sm-4"><label for="lname">cp:</label> </div> <input type="text" id="lname" name="modelVal" value={{temp.model_year}}><br><br>
+                    <div class="col-md-4 col-sm-4"><label for="lname">Cholestrol:</label> </div> <input type="text" id="lname" name="originVal" value={{temp.origin}}><br><br>
+                    
+                    <div class="col-md-4 col-sm-4"><label for="fname">Thal:</label> </div> <input name="cylinderVal" type="text" value={{temp.cylinders}}><br><br>
+                    <div class="col-md-4 col-sm-4"><label for="lname">fbs:</label> </div> <input type="text" id="lname" name="dispVal" value={{temp.displacement}}><br><br>
+                    <br>
+                  </fieldset>
+                  <div class="form-group">
+                    <button class="btn btn-outline-info" type="submit">Predict</button>
+                </div>
+            </form>
+            </div>
+          </div>
+        </article>
+  
+{% endblock content %}
+ 
